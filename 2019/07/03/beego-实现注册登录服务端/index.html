@@ -2,7 +2,7 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>慢 SQL 原因 | JonasAi</title>
+  <title>beego 实现注册登录服务端 | JonasAi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/app.css">
@@ -34,15 +34,22 @@
         <main class="post">
   <article>
   <h1 class="article-title">
-    <a href="/2019/05/09/慢SQL原因/">慢 SQL 原因</a>
+    <a href="/2019/07/03/beego-实现注册登录服务端/">beego 实现注册登录服务端</a>
   </h1>
 
   <section class="article-meta">
-    <p class="article-date">May 09 2019</p>
+    <p class="article-date">July 03 2019</p>
   </section>
 
   <section class="article-entry">
-    
+    <h3 id="bee-工具的使用"><a href="#bee-工具的使用" class="headerlink" title="bee 工具的使用"></a>bee 工具的使用</h3><ol>
+<li>自动生成代码<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bee generate appcode -tables="test" -driver=mysql -conn="root:chunhui@tcp(127.0.0.1:3306)/dj?charset=utf8"</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>这里需要注意 mysql 版本 需要为 5.7 及以下, 8.0 版本无法正常使用!</p>
+</blockquote>
+
   </section>
 </article>
 
@@ -72,7 +79,7 @@
 <script>
   var disqus_shortname = 'jonasai';
   
-  var disqus_url = 'http://yoursite.com/2019/05/09/慢SQL原因/';
+  var disqus_url = 'http://yoursite.com/2019/07/03/beego-实现注册登录服务端/';
   
   (function(){
     var dsq = document.createElement('script');
